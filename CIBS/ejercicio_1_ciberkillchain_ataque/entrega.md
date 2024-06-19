@@ -1,19 +1,22 @@
 # Ejercicio CiberKillChain - Ataque
 
+### Alumno: María Antonella Crestan
 
-## Enunciado
+## Sistema víctima
+Trabajo Final de Especialización de Ing. Luciano Matías Ciminari Smith: Sistema de monitoreo para puntos de venta (https://lse-posgrados-files.fi.uba.ar/tesis/LSE-FIUBA-Trabajo-Final-CEIoT-Luciano-Matias-Ciminari-Smith-2022.pdf).
 
-Armar una cyberkillchain usando técnicas de la matriz de Att&ck para un escenario relacionado al trabajo práctico de la carrera.
+El trabajo consiste en la instalación de estantes inteligentes en locales comerciales. Estos podrían detectar los cambios en el stock de productos, a través de sensores de peso que tienen en su interior. El beneficio del producto, entre otros, es que la información que reporta puede ser usada por los dueños del comercio y los proveedores de productos para entender así los patrones de consumo, nivel de stock y requerimientos de abastecimiento. 
 
-## Instrucciones
+![image](https://github.com/AntonellaCrestan/ceiot_base/assets/141678982/77440134-58e7-40e5-bd60-14a10ca9abbe)
 
-### Crear un nuevo documento en esta carpeta con el nombre entrega.md y las siguientes secciones:
+"Arquitectura del Sistema"- Fuente: Trabajo Final Ing Ciminari Smith
 
- * (# Alumno) Alumno
- * (# Sistema víctima) Muy breve descripción del trabajo práctico con link si hay
- * (# Objetivo)
- * (# Resolución)
- * (## Reconnaissance)
+## Sistema ataque
+### Objetivo
+Como parte de la competencia en el rubro de estantes inteligentes, mi objetivo es que la aplicación del frontend muestre datos erróneos manipulados, volviendo el producto poco fiable e indeseable para los usuarios, tanto los dueños de los comercios como proveedores de los productos. 
+### Resolución
+ 1. **Reconnaissance**:
+   
  * (## Weaponization)
  * etc...
 
