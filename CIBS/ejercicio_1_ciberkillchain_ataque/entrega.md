@@ -1,6 +1,6 @@
 # Ejercicio CiberKillChain - Ataque
 
-### Alumno: María Antonella Crestan
+### Alumna: María Antonella Crestan
 
 ## Sistema víctima
 *Trabajo Final de Especialización de Ing. Luciano Matías Ciminari Smith*: **Sistema de monitoreo para puntos de venta** [link](https://lse-posgrados-files.fi.uba.ar/tesis/LSE-FIUBA-Trabajo-Final-CEIoT-Luciano-Matias-Ciminari-Smith-2022.pdf).
