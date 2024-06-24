@@ -15,20 +15,33 @@ El trabajo consiste en la instalación de estantes inteligentes en locales comer
 ### Objetivo
 Como parte de la competencia en el rubro de estantes inteligentes, mi objetivo es que la aplicación del frontend muestre datos erróneos manipulados, volviendo el producto poco fiable e indeseable para los usuarios, tanto los dueños de los comercios como proveedores de los productos. 
 ### Resolución
+**FASE I**
  1. **Reconnaissance**:
    -	Recolecto información sobre los locales comerciales que tienen instalado los estantes inteligentes a partir de la red social LinkedIn del fabricante, donde tiene expuesto quiénes son sus clientes. [Technique 1593.001](https://attack.mitre.org/techniques/T1593/001/).
-   -	Me comunico telefónicamente con los clientes alegando problemas en el registro de los datos desde los sensores, y solicito usuario y contraseña para poder repararlos. Es suficiente con la obtención de los datos de 1 cliente.   [Technique 1598.004](https://attack.mitre.org/techniques/T1598/004/)
+2. **Weaponization**:
+  - **Decido** armar un discurso para convencer a los clientes de que deben compartirme su usuario y contraseña para poder corregir errores del backend en la aplicación de sus sensores. Les transmito la urgencia de que el error implica que se carguen costos adicionales a su tarjeta de crédito por cada toma de dato. 
+3. **Delivery**:
+  - Me comunico telefónicamente con los clientes con el discurso ya preparado. Es suficiente con la obtención de los datos de 1 cliente.   [Technique 1598.004](https://attack.mitre.org/techniques/T1598/004/)
+4. **Exploitation**
+  -	Un cliente comparte su usuario y contraseña.
+5. **Installation**
+  -	Ingreso a la aplicación del usuario y avanzo con la segunda fase del ataque:
+
+**FASE 2**
+1. **Reconnaissance**:
    -	Accedo a la aplicación del producto e investigo vulnerabilidades para poder adulterar los datos que tiene almacenado el sistema. [Technique 1595.002](https://attack.mitre.org/techniques/T1595/002/)
 2. **Weaponization**:
   -	**Decido** desarrollar un malware capaz de controlar los sensores remotos que estén conectados a la aplicación del cliente y alterar los valores que presenten. [Technique 1587.001]( https://attack.mitre.org/techniques/T1587/001/)
-     - La alteración de los valores no debe ser fácilmente perceptible, con el objetivo de que las fallas en el conteo del stock se relacionen a un mal funcionamiento del producto comprado y no a fallas de la aplicación. 
+     - La alteración de los valores no debe ser fácilmente perceptible, con el objetivo de que las fallas en el conteo del stock se relacionen a un mal funcionamiento del estante IoT comprado y no a fallas de la aplicación.
+  - **Decido** escribir un e-mail marketing que invite a descargar una actualización de la aplicación para tener el último ajuste en cuanto a tolerancia de mediciones de los sensores y conexión con los proveedores de productos.
 3. **Delivery**:
-  -	Envío el malware como adjunto en un correo electrónico. Invito a los clientes a descargarlo como actualización de la aplicación para tener el último ajuste en cuanto a tolerancia de mediciones y conexión con los proveedores de productos.
+  -	Envío el malware como adjunto en el correo electrónico que escribí.  
 4. **Exploitation**
-  -	Los clientes descargan el malware recibido. [Technique 1203](https://attack.mitre.org/techniques/T1203/)
+  -	Los clientes descargan y ejecutan el malware recibido. [Technique 1203](https://attack.mitre.org/techniques/T1203/)
 5. **Installation**
-  -	El malware se instala interfiriendo en los datos que recolectan los sensores. 
+  -	El malware se instala en la computadora personal del usuario y acciona en segundo plano. 
 6. **Command & Control**
-  -	Controlar las modificaciones que se realicen sobre la aplicación para conocer si deja de aplicarse la modificación de valores. [Technique 1219](https://attack.mitre.org/techniques/T1219/)
+  - Cuando el usuario ingrese a la aplicación del estante IoT el malware está programado para ejecutar cambios en la base de la aplicación. 
 7. **Actions on Objectives**
+  - Al interferir en la programación base de la aplicación, se logra que en cada valor del dashboard final exista una diferencia porcentual de 5% con lo real. Esta variación porcentual cambia cada semana.
   - Mantengo las alteraciones en valores hasta que el cliente decida desinstalar los estantes inteligentes que tiene en su local comercial. Teniendo la información de contacto del cliente le ofrezco los estantes inteligentes que yo fabrico. 
