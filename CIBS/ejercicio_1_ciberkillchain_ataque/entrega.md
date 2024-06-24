@@ -27,7 +27,7 @@ Como parte de la competencia en el rubro de estantes inteligentes, mi objetivo e
 5. **Installation**
   -	Ingreso a la aplicación del usuario y avanzo con la segunda fase del ataque:
 
-**FASE 2**
+**FASE II**
 1. **Reconnaissance**:
    -	Accedo a la aplicación del producto e investigo vulnerabilidades para poder adulterar los datos que tiene almacenado el sistema. [Technique 1595.002](https://attack.mitre.org/techniques/T1595/002/)
 2. **Weaponization**:
